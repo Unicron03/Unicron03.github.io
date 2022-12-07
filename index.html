@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+jQuery(document).ready(function ($) {
+
+  $('a.scroll-link').click(function (e) {
+    e.preventDefault();
+    $id = $(this).attr('href');
+    $('body,html').animate({
+      scrollTop: $($id).offset().top - 20 },
+    750);
+  });
+
+});
+    </script>
+	
+	<head>
+		<title> Unicron03 </title>
+		<link href="CSS/Accueil.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="Image/EV.jpg" />
+	</head>
+	
+	<body>
+		<div id="haut" class="container">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a class="Home" href="#" onclick="window.location.href = 'Page/Projet.html';">Project</a>
+						</li>
+						<li>
+							<a class="Home" href="#" onclick="window.location.href = 'Page/Skills.html';">Skills</a>
+						</li>
+						<li>
+							<a class="Home" href="#" onclick="window.location.href = 'Page/Contact.html';">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+	
+		<h1 id="presentation" class="Menu"> <u> Présentation </u> </h1>
+		
+		<table class="presentation">
+			<tr>
+				<td style="border-style:groove"> <a onclick="window.open('https://www.instagram.com/unicron_e')" class="lien"> <img class="reseaux" src="Image/logo_instagram.png" title="Logo_Instagram"> </a> </td>
+				<td rowspan="3" class="logo">
+					<div class="boxesContainer">
+						<div class="cardBox">
+							<div class="card">
+								<div class="back"> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+				<td rowspan="3">
+					<h1 class="textTab" align="left"> 
+						Salut, je suis Enzo.
+						<br>
+						Je suis un lycéen qui aime,
+						<br>
+						programmer,
+						<br>
+						et créer pleins de choses !
+					</h1>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-style:groove"> <a href="mailto:enzo.vandepoele2@gmail.com"> <img class="reseaux" src="Image/logo_mail.png" title="Logo_Mail"> </a> </td>
+			</tr>
+			<tr>
+				<td style="border-style:groove"> <a onclick="window.open('https://github.com/Unicron03')" class="lien"> <img class="reseaux" src="Image/logo_github.png" title="Logo_Github"> </a> </td>
+			</tr>
+		</table>	
+		
+		<div class="hero">
+				
+			<a class="scroll-link" href="#content">
+				<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+				<g fill="none" fill-rule="evenodd">
+					<rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+					<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+				</g>
+			</svg>
+			</a>
+		</div>
+
+		<div id="content" class="info">
+			<h2>Informations</h2>
+			<div class="content">
+				<p> Actuellement en classe de Terminale G avec spécialitées Mathématiques et NSI, je cherche à devenir développeur d'applications mobiles ou de jeux vidéos. </p>
+				<br>
+				<p> J'ai de nombreuses compétences en languages de programmations que vous pouvez trouver <a href="#" onclick="window.location.href = 'Page/Skills.html';" class="lien"> ICI</a>, mais aussi en Anglais et en Espagnol. </p>
+				<br>
+				<p> J'ai aussi réalisés plusieurs petits projets et d'autres bien plus conséquent comme un jeu vidéo par exemple. Vous pouvez trouvez quelques uns de ces projets juste <a href="#" onclick="window.location.href = 'Page/Projet.html';" class="lien"> ICI</a>. </p>
+				<br>
+				<p> Pour toutes questions, vous pouvez me contacter via mes réseaux, par mails ou bien encore par téléphone juste <a href="#" onclick="window.location.href = 'Page/Contact.html';" class="lien"> ICI</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>
