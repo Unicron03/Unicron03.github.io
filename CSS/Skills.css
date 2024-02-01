@@ -107,7 +107,7 @@ body {
     height: auto;
     margin: 40px auto;
     background-color: #607d8b;
-    //border: 1px solid #cdcdcd;
+    /* border: 1px solid #cdcdcd; */
     padding: 10px;
     border-radius:20px;
     -o-border-radius:20px;
@@ -127,9 +127,11 @@ body {
     position: relative;
     background: rgba(17, 17, 17, .3);
     margin: 20px auto;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 #Skill-HTML {
-    width: 75%;
+    width: 90%;
     animation: Animate-HTML 4s;
     -webkit-animation: Animate-HTML 4s;
     -moz-animation: Animate-HTML 4s;
@@ -137,176 +139,188 @@ body {
     height: 50px;
     position: absolute;
     background-color: #ea8564;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-HTML {
     from {
     width: 10px;
 }
 to {
-    width: 75%}
+    width: 90%}
 }@-webkit-keyframes Animate-HTML {
     from {
     width: 10px;
 }
 to {
-    width: 75%}
+    width: 90%}
 }@-moz-keyframes Animate-HTML {
     from {
     width: 10px;
 }
 to {
-    width: 75%}
+    width: 90%}
 }@-o-keyframes Animate-HTML {
     from {
     width: 10px;
 }
 to {
-    width: 75%}
+    width: 90%}
 }#Skill-CSS {
     animation: Animate-CSS 5s;
     -webkit-animation: Animate-CSS 5s;
     -moz-animation: Animate-CSS 5s;
     -o-animation: Animate-CSS 5s;
-    width: 65%;
+    width: 85%;
     height: 50px;
     position: absolute;
     background-color: #55a69f;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-CSS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 85%}
 }@-webkit-keyframes Animate-CSS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 85%}
 }@-moz-keyframes Animate-CSS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 85%}
 }@-o-keyframes Animate-CSS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 85%}
 }#Skill-Python {
     animation: Animate-Python 5s;
     -webkit-animation: Animate-Python 5s;
     -moz-animation: Animate-Python 5s;
     -o-animation: Animate-Python 5s;
-    width: 100%;
+    width: 95%;
     height: 50px;
     position: absolute;
     background-color: #99856d;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-Python {
     from {
     width: 10px;
 }
 to {
-    width: 100%}
+    width: 95%}
 }@-webkit-keyframes Animate-Python {
     from {
     width: 10px;
 }
 to {
-    width: 100%}
+    width: 95%}
 }@-moz-keyframes Animate-Python {
     from {
     width: 10px;
 }
 to {
-    width: 100%}
+    width: 95%}
 }@-o-keyframes Animate-Phyton {
     from {
     width: 10px;
 }
 to {
-    width: 100%}
+    width: 95%}
 }#Skill-JS {
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
     -moz-animation: Animate-JS 4s;
     -o-animation: Animate-JS 4s;
-    width: 25%;
+    width: 80%;
     height: 50px;
     position: absolute;
     background-color: #c44e45;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 80%}
 }@-webkit-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 80%}
 }@-moz-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 80%}
 }@-o-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 80%}
 }#Skill-Lua {
-    animation: Animate-Lua 4s;
-    -webkit-animation: Animate-Lua 4s;
-    -moz-animation: Animate-Lua 4s;
-    -o-animation: Animate-Lua 4s;
-    width: 90%;
+    animation: Animate-Lua 6s;
+    -webkit-animation: Animate-Lua 6s;
+    -moz-animation: Animate-Lua 6s;
+    -o-animation: Animate-Lua 6s;
+    width: 100%;
     height: 50px;
     position: absolute;
     background-color: #5aa669;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-Lua {
     from {
     width: 10px;
 }
 to {
-    width: 90%}
+    width: 100%}
 }@-webkit-keyframes Animate-Lua {
     from {
     width: 10px;
 }
 to {
-    width: 90%}
+    width: 100%}
 }@-moz-keyframes Animate-Lua {
     from {
     width: 10px;
 }
 to {
-    width: 90%}
+    width: 100%}
 }@-o-keyframes Animate-Lua {
     from {
     width: 10px;
 }
 to {
-    width: 90%}
+    width: 100%}
 }#Skill-PHP {
-    animation: Animate-PHP 4s;
-    -webkit-animation: Animate-PHP 4s;
-    -moz-animation: Animate-PHP 4s;
-    -o-animation: Animate-PHP 4s;
+    animation: Animate-PHP 5s;
+    -webkit-animation: Animate-PHP 5s;
+    -moz-animation: Animate-PHP 5s;
+    -o-animation: Animate-PHP 5s;
     width: 50%;
     height: 50px;
     position: absolute;
     background-color: #5A69A6;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-PHP {
     from {
@@ -341,6 +355,8 @@ to {
     height: 50px;
     position: absolute;
     background-color: #23b1db;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 @keyframes Animate-SQL {
     from {
@@ -366,25 +382,133 @@ to {
 }
 to {
     width: 85%}
-}.Skill-Area {
+}
+
+#Skill-CPP {
+    animation: Animate-CPP 5s;
+    -webkit-animation: Animate-CPP 5s;
+    -moz-animation: Animate-CPP 5s;
+    -o-animation: Animate-CPP 5s;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    background-color: #db235d;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+@keyframes Animate-CPP {
+    from {width: 10px;}
+    to {width: 90%}
+}@-webkit-keyframes Animate-CPP {
+    from {width: 10px;}
+    to {width: 90%}
+}@-moz-keyframes Animate-CPP {
+    from {width: 10px;}
+    to {width: 90%}
+}@-o-keyframes Animate-CPP {
+    from {width: 10px;}
+    to {width: 90%}
+}
+
+#Skill-CS {
+    animation: Animate-CS 6s;
+    -webkit-animation: Animate-CS 6s;
+    -moz-animation: Animate-CS 6s;
+    -o-animation: Animate-CS 6s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: #00e6a5;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+@keyframes Animate-CS {
+    from {width: 10px;}
+    to {width: 80%}
+}@-webkit-keyframes Animate-CS {
+    from {width: 10px;}
+    to {width: 80%}
+}@-moz-keyframes Animate-CS {
+    from {width: 10px;}
+    to {width: 80%}
+}@-o-keyframes Animate-CS {
+    from {width: 10px;}
+    to {width: 80%}
+}
+
+#Skill-Bash {
+    animation: Animate-Bash 4s;
+    -webkit-animation: Animate-Bash 4s;
+    -moz-animation: Animate-Bash 4s;
+    -o-animation: Animate-Bash 4s;
+    width: 75%;
+    height: 50px;
+    position: absolute;
+    background-color: #23db70;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+@keyframes Animate-Bash {
+    from {width: 10px;}
+    to {width: 75%}
+}@-webkit-keyframes Animate-Bash {
+    from {width: 10px;}
+    to {width: 75%}
+}@-moz-keyframes Animate-Bash {
+    from {width: 10px;}
+    to {width: 75%}
+}@-o-keyframes Animate-Bash {
+    from {width: 10px;}
+    to {width: 75%}
+}
+
+#Skill-Batch {
+    animation: Animate-Batch 4s;
+    -webkit-animation: Animate-Batch 4s;
+    -moz-animation: Animate-Batch 4s;
+    -o-animation: Animate-Batch 4s;
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    background-color: #8d6c6c;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+@keyframes Animate-Batch {
+    from {width: 10px;}
+    to {width: 35%}
+}@-webkit-keyframes Animate-Batch {
+    from {width: 10px;}
+    to {width: 35%}
+}@-moz-keyframes Animate-Batch {
+    from {width: 10px;}
+    to {width: 35%}
+}@-o-keyframes Animate-Batch {
+    from {width: 10px;}
+    to {width: 35%}
+}
+
+.Skill-Area {
     z-index: 1;
     float: left;
-    //position: absolute;
+    /* position: absolute; */
     margin-top: 15px;
     margin-left: 15px;
     text-shadow: none;
     color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    /* font-family: Lato-Regular, sans-serif; */
     font-size: 18px;
 }
 .PercentText {
     z-index: 3;
-    position: relative;
+    position: absolute;
     padding-right: 15px;
     margin-top: 15px;
     float: right;
     text-shadow: none;
     color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    /* font-family: Lato-Regular, sans-serif; */
     font-size: 18px;
+    overflow: hidden;
+    right: 0;
 }

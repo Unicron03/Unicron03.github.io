@@ -1,189 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr" >
-
 	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title> Unicron03 </title>
 		<link href="../CSS/Projet.css" rel="stylesheet">
+		<link href="../CSS/menu.css" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="../Image/EV.jpg" />
 	</head>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'></script>
-<script src='https://codepen.io/ste-vg/pen/zBVaZw.js'></script>
-      <script id="rendered-js" >
-var app = angular.module('app', ['ngAnimate']);
-
-app.controller('mainCtrl', function ($scope) {
-  $scope.boxes = [{
-    name: 'RushOfLands',
-	title: 'Jeux vidéo',
-	link: "https://github.com/Unicron03/RushOfLands/raw/main/RushOfLands_Mark3.5.zip",
-	text1: "Rush Of Lands est un jeu vidéo de type platforme où le joueur doit finir plusieurs maps truffés de pièges et d'ennemis.",
-	text2: "Le jeu est codé en Lua avec Love2d_v11.3 et les maps sont construites avec Tiled. Voici quelques infos complémentaires :",
-	text3: "• Ce jeu est pour le moment prévu pour une version finale 3.5.",
-	text4: "• Il est toutefois possible que quelques bugs soit présent, je vous invite à m'en faire part en me contactant.",
-	text5: "• A noter que le jeu n'est disponible que pour les versions de Windows ne disposant que d'un ordinateur de 64bits;",
-	text6: "• Je suis aussi ouvert à toutes suggestions pour des changements ou de nouvelles idées !",
-	text7: "• Ceci est mon premier jeu qui n'est donc pas parfait et je vous demande donc d'être compréhensif.",
-	text8: "D'autres jeux seront développés à l'avenir, que se soit en lua ou dans d'autres languages.",
-    image: '../Image/RushOfLands.jpg' },{
-	
-	name: 'Volta',
-	title: 'Voiture autonome',
-	link: "https://github.com/Unicron03/Projet_Volta/archive/refs/heads/master.zip",
-	text1: "La voiture est composé d'une pyboard, de divers capteurs, de leds, d'un servo pour la direction et deux moteurs avec réducteur.",
-	text2: "Elle se déplace de façon autonome en évitant les obstacles et en s'adaptant au milieu dans lequel elle évolue.",
-	text3: "Elle intègre aussi plusieurs contraintes :",
-	text4: "• Si un obstacle est détecté la voiture ralenti de plus en plus jusqu’à l’arrêt complet;",
-	text5: "• Si la voiture détecte une montée, elle accélére, si elle détecte une descente elle ralenti (avec allumage de deux leds différentes sur la carte pyboard);",
-	text6: "• Si la voiture est dans le noir, une led s'allume;",
-	text7: "• Si on appuie sur le bouton USR de la carte, le programme se mets en pause jusqu’à que le bouton soit rappuyer;",
-	text8: "• Si la voiture est bloqué par un certain obstacle qu'elle ne détecte pas, elle repart automatiquement.",
-    image: '../Image/voiture.png' },{
-  
-	name: 'MachineASous',
-	title: "Simulation d'un casino",
-	link: "https://github.com/Unicron03/Projet_MachineASous/archive/refs/heads/main.zip",
-	text1: "MachineASous est une page web ayant pour but de simuler une machine à sous au casino.",
-	text2: "Ce site web possède une base HTML avec du CSS et du JavaScript dont voici les caractéristiques :",
-	text3: "• Initialement, le bac de la machine contient 1000 jetons et le joueur en possède 100.",
-	text4: "• Pour lancer le jeu, le joueur doit incérer X jetons dans la machine puis en appuyant sur un bouton :",
-	text5: "- Si les trois chiffres sont 9, 9, 9, alors le joueur reçoit tous les jetons du bac. S'ils sont identiques mais non 9, 9, 9, le joueur reçoit 6 fois sa mise;",
-	text6: "- Sinon, s'il n'y en a que deux d'identiques, le joueur reçoit 3 fois sa mise;",
-	text7: "- Dans tout les autres cas, il ne reçoit rien !",
-	text8: "• Le jeu s'arrête quand le nombre total de jetons dans le bac est inférieur à 500 ou si le joueur quitte la page.",
-    image: '../Image/MachineASous.jpg' },{
-	
-	name: 'SiteSup',
-	title: 'Site web pro',
-	link: "",
-	text1: "Ce fichier contient tous les éléments HTML, CSS, JavaScript, etc. du site sur lequel vous êtes.",
-	text2: "Le site vous donne accés à différentes choses que voici :",
-	text3: "• Vous pouvez consulter mes capacités dans différents languages de programations dans l'onglet 'Skills' du menu;",
-	text4: "• Vous avez accés à différents fichiers et projets comme celui que vous êtes en train de lire;",
-	text5: "• Vous pouvez aussi me contacter via mes réseaux ou par mails dans le menu, ou dans l'onglet 'Contact' pour avoir accés à plus de détails;",
-	text6: "Ce site est fonctionnel sur Windows mais quelques bugs persistent toutefois sur Android.",
-	text7: "Il sera régulièrement mis à jour avec d'autres projets par exemple.",
-	text8: "",
-	image: '../Image/EV.jpg' },{
-	
-	name: 'FichiersDivers',
-	title: 'Différents fichiers',
-	link: "https://github.com/Unicron03/FichiersDivers/archive/refs/heads/main.zip",
-	text1: "Ceci est un ensemble de fichiers divers telles que des jeux, des sites, des petits algo, etc.",
-	text2: "Voici qulques uns des petits projets que contient ce fichier :",
-	text3: "• Des projets de jeu graphique en Python tels qu'un pierre-papier-ciseaux ou encore un pendu;",
-	text4: "• Des projets en HTML, CSS et PHP qui consistent à se loger à une page web à l'aide d'un mot de passe;",
-	text5: "• Des projets qui regroupent plusieurs algorithme (tri, liste chaînées, etc.);",
-	text6: "• Des projets en Lua tels qu'un petit jeu de pong par exemple.",
-	text7: "D'autres projets seront réalisés et ajoutés à cette liste.",
-	text8: "",
-	image: '../Image/DiversProject.jpg' }];
-
-  $scope.selected = [];
-  $scope.selectBox = function (item, position) {
-    $scope.selected = [{
-      item: item,
-      position: position }];
-
-    $scope.$apply();
-  };
-  $scope.clearSelection = function () {
-    $scope.selected = [];
-  };
-});
-
-app.directive('box', function () {
-  return {
-    restrict: 'E',
-    scope: {},
-    bindToController: {
-      onSelect: "=",
-      item: "=" },
-
-    controllerAs: 'box',
-    controller: function () {
-      var box = this;
-
-      box.goFullscreen = function (e) {
-        box.onSelect(box.item, e.target.getBoundingClientRect());
-      };
-    },
-    link: function (scope, element) {
-      element.bind('click', scope.box.goFullscreen);
-      element.css({
-        'background-image': 'url(' + scope.box.item.image + ')' });
-
-    } };
-
-});
-
-app.directive('bigBox', function ($timeout) {
-  return {
-    restrict: 'AE',
-    scope: {},
-    bindToController: {
-      position: "=",
-      selected: "=",
-      onSelect: "=" },
-
-    controllerAs: 'box',
-    controller: function () {
-      var box = this;
-    },
-    link: function (scope, element) {
-      var css = {};
-      for (var key in scope.box.position) {
-        css[key] = scope.box.position[key] + 'px';
-      }
-
-      element.css(css);
-
-      $timeout(function () {
-        element.css({
-          top: '50%',
-          left: '10%' });
-
-        element.addClass('image-out');
-      }, 200);
-
-      $timeout(function () {
-        element.css({
-          width: '80%',
-          height: '100%' });
-
-      }, 500);
-
-      $timeout(function () {
-        element.addClass('show');
-      }, 800);
-    } };
-
-});
-    </script>
-
 	<body>		
-		<div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">		
+		<div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
 			<div class="page">
-				<a href="#" onclick="window.location.href = '../index.html';" class="button">
-					Menu
-					<span>
-						<svg>
-							<use xlink:href="#arrow" href="#arrow"></use>
-						</svg>
-					</span>
-				</a>
-				<svg style="display: none;">
-				  <defs>
-					  <symbol id="arrow" viewBox="0 0 100 100">
-						<path d="M12.5 45.83h64.58v8.33H12.5z"/>
-							<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
-					  </symbol>
-				  </defs>
-				</svg>	
+				<div class="menuPage">
+					<header>
+						<nav>
+							<ul>
+								<li>
+									<a class="Home" href="#" onclick="window.location.href = '../index.html';">Accueil</a>
+								</li>
+								<li>
+									<a class="Home" href="#" onclick="window.location.href = 'Skills.html';">Skills</a>
+								</li>
+								<li>
+									<a class="Home" href="#" onclick="window.location.href = 'Contact.html';">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+				</div>
+
 				<div class="grid">
-					<div class="grid-item" ng-repeat="item in boxes">
-						<box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
+					<div class="grid-item" ng-repeat="item in boxes" title="{{selected[0].item.titlePU}}">
+						<box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}" title="{{selected[0].item.titlePU}}"></box>
 					</div>
 				</div>
 			</div>
@@ -212,12 +60,16 @@ app.directive('bigBox', function ($timeout) {
 							<br>
 								{{selected[0].item.text8}}
 						</p>
-						<p> Vous pouvez télécharger le fichier .zip en cliquant sur "<i>{{selected[0].item.title}}</i>".</p>
-						<p> <u>Note</u> : Il est nécessaire de déziper le fichier afin que tout fonctionnent correctement.</p>
-					</div>	
+						<p>{{selected[0].item.phraseDownload}}</p>
+						<p> <u>{{selected[0].item.note1}}</u>{{selected[0].item.note2}}</p>
+					</div>
 				</div>
 			</div>
 		</div>  
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'></script>
+		<!-- <script src='https://codepen.io/ste-vg/pen/zBVaZw.js'></script> -->
+		<script src="../JS/projet.js"></script>
 	</body>
 </html>
- 

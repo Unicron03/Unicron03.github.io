@@ -5,7 +5,7 @@
 }
 
 .mouse {
-	max-width: $mouse-width;
+	/* max-width: $mouse-width; */
 	width: 30%;
 	height: auto;
 }
@@ -50,14 +50,14 @@ body
 	background-attachment: fixed;
 }
 
-header {
+/* header {
 	background-image: linear-gradient(to bottom,  rgba(0,0,0,0.75) -10%,rgba(0,0,0,0) 100%);
 	text-align: center;
 	padding: 0.5rem 0 5rem;
 	font-size: 1.25rem;
-}
+} */
 
-ul {
+/* ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -65,7 +65,7 @@ ul {
 
 li {
 	display: inline-flex;
-}
+} */
 
 .lien {
 	cursor: pointer;
@@ -77,30 +77,6 @@ li {
 	color: #fff;
 	font-size: 2rem;
 	padding-left: 150px;
-}
-
-.Home {
-	position: relative;
-	padding: 1rem 0 0.5rem;
-	margin: 0 1.5rem;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-.Home::after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%) scaleX(0);
-	transform-origin: 50% 50%;
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.8);
-	transition: transform 250ms;
-}
-.Home:hover::after {
-	transform: translateX(-50%) scaleX(1);
 }
 
 th, td {
