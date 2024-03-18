@@ -1,47 +1,5 @@
-.hero {
-	position: relative;
-	min-height: 35vh;
-	text-align: center;
-}
 
-.mouse {
-	/* max-width: $mouse-width; */
-	width: 30%;
-	height: auto;
-}
-
-.scroll {
-	animation-name: scroll;
-	animation-duration: 1.5s;
-	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
-	animation-iteration-count: infinite;
-	transform-origin: 50% 20.5px;
-	will-change: transform, opacity;
-	opacity: 1;
-}
-
-.scroll-link {
-	position: absolute;
-	bottom: 1rem;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-@keyframes scroll {
-
-	0%, 20% {
-		transform: translateY(0) scaleY(1);
-	}
-
-	100% {
-		transform: translateY(36px) scaleY(2);
-		opacity: 0;
-	}
-
-}
-
-body
-{ 
+body {
 	margin: 0;
 	font-size: 1.1em;
 	background: url('../Image/background.jpg');
@@ -49,6 +7,12 @@ body
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	font: 700 30px 'Space Mono', monospace;
+}
+
+h2 {
+	color: #22A39F;
+	font-family: 'Space Mono', monospace;
+	text-align: center;
 }
 
 span {
@@ -76,9 +40,36 @@ span.animation {
     to {border-right-color: transparent;}
 }
 
-.lien {
-	cursor: pointer;
+.hero {
+    position: relative;
+	text-align: center;
 }
+
+.mouse {
+	max-width: 8%;
+	min-width: 70px;
+	height: auto;
+}
+
+.scroll {
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	animation-iteration-count: infinite;
+	transform-origin: 50% 20.5px;
+	will-change: transform, opacity;
+	opacity: 1;
+}
+@keyframes scroll {
+
+	0%, 20% {transform: translateY(0) scaleY(1);}
+	100% {
+		transform: translateY(36px) scaleY(2);
+		opacity: 0;
+	}
+}
+
+.lien {cursor: pointer;}
 
 .textTab {
 	/* font-family: 'firamonobold', cursive; */
@@ -89,45 +80,6 @@ span.animation {
 }
 #helloText{font-size: 3rem;}
 
-th, td {
-	/* border-radius: 20px;
-	border-color: rgb(65, 63, 66); */
-	border: none;
-}
-
-.presentation
-{	
-	margin-top: 4%;
-	margin-left: 5%;
-}
-
-.text
-{
-	position: relative;
-	right: 30%;
-	color: white;
-	font-size: 1.2em;
-}
-
-.reseaux
-{
-	margin: 0 1.5rem;
-	width: 50px;
-	height: auto;
-}
-
-.logo
-{
-	width: 300px;
-	height: auto;
-}
-
-h2 {
-	color: #22A39F;
-	font-family: 'Space Mono', monospace;
-	text-align: center;
-}
-
 .lien {
 	color:#9df2fd;
 	text-decoration: none;
@@ -136,7 +88,7 @@ h2 {
 
 .info {
 	font-size: 1.6rem;
-	margin: 0% 3% 2% 3%;
+	margin: 0% 3% 3% 3%;
 	color: white;
 	font-family: 'firamonobold', cursive;
 }
@@ -225,39 +177,72 @@ h2 {
 	animation: giro 2.5s 1;
 }
 @-webkit-keyframes giro {
-	from {
-	transform: rotateY(180deg);
-	}
-	to {
-	transform: rotateY(0deg);
-	}
+	from {transform: rotateY(180deg);}
+	to {transform: rotateY(0deg);}
 }
 @keyframes giro {
-	from {
-	transform: rotateY(180deg);
-	}
-	to {
-	transform: rotateY(0deg);
-	}
+	from {transform: rotateY(180deg);}
+	to {transform: rotateY(0deg);}
 }
-@media screen and (max-width: 767px) {
-	.cardBox {
-		margin-left: 2.8%;
-		margin-top: 3%;
-		width: 46%;
-	}
-	.card {
-		height: 285px;
-	}
-	.cardBox:last-child {
-		margin-bottom: 3%;
-	}
+
+.containerTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+	margin: 4% 0% 0% 5%;
 }
-@media screen and (max-width: 480px) {
-	.cardBox {
-		width: 94.5%;
-	}
-	.card {
-		height: 260px;
-	}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+	height: auto;
+}
+
+.social-link {
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    width: 50px;
+    height: auto;
+}
+
+.profile-picture {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+	height: auto;
+	padding-left: 30px;
+}
+
+.text-content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .containerTab {
+        flex-direction: column;
+        align-items: center;
+		padding: 0;
+		margin: 4% 0% 5% 5%;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social-link {margin: 0 30px;}
+
+    .profile-picture {
+        padding: 45px 0; /* Ajuste le padding */
+		max-width: 300px;
+    	width: -webkit-fill-available;
+    }
+
+	.textTab, .text-content {padding-left: 0;}
 }

@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-		
-  	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-	<script id="rendered-js" >
-		jQuery(document).ready(function ($) {
-
-		$('a.scroll-link').click(function (e) {
-			e.preventDefault();
-			$id = $(this).attr('href');
-			$('body,html').animate({
-			scrollTop: $($id).offset().top - 20 },
-			750);
-		});
-
-		});
-	</script>
-	<script src="JS/animation.js"></script>
-	
 	<head>
 		<title> Vandepoele Enzo </title>
 		<link href="CSS/Accueil.css" rel="stylesheet">
@@ -45,53 +29,48 @@
 				</nav>
 			</header>
 		</div>
+
+		<div class="containerTab">
+			<div class="social-icons">
+				<a href="https://www.instagram.com/unicron_e" class="social-link"><img class="social-icon" src="Image/logo_instagram.png" alt="Logo Instagram"></a>
+				<a href="https://www.linkedin.com/in/enzo-vandepoele-3224ab2b2/" class="social-link"><img class="social-icon" src="Image/linkedin.png" alt="Logo Linkedin"></a>
+				<a href="https://github.com/Unicron03" class="social-link"><img class="social-icon" src="Image/logo_github.png" alt="Logo Github"></a>
+			</div>
 		
-		<table class="presentation">
-			<tr>
-				<td> <a onclick="window.open('https://www.instagram.com/unicron_e')" class="lien"> <img class="reseaux" src="Image/logo_instagram.png" title="Logo_Instagram"> </a> </td>
-				<td rowspan="3" class="logo">
-					<div class="boxesContainer">
-						<div class="cardBox">
-							<div class="card">
-								<div class="back"> 
-								</div>
+			<div class="profile-picture">
+				<div class="boxesContainer">
+					<div class="cardBox">
+						<div class="card">
+							<div class="back"> 
 							</div>
 						</div>
 					</div>
-				</td>
-				<td rowspan="3">
-					<h1 class="textTab" align="left"> 
-						<div id="helloText">Bonjour,</div><br>
-						Je suis Vandepoele Enzo.<br>
-						Je suis un étudiant en BUT Informatique<br>
-						de 1ère année qui aime,<br>
-						<u>programmer</u>, <span class="dev">&lsaquo;développer&rsaquo;</span><br>
-						et créer des <span class="wrap" data-period="2000"
-							data-rotate='[ "jeux", "applications", "logiciels" ]'></span>!
-					</h1>
-				</td>
-			</tr>
-
-			<tr>
-				<td> <a onclick="window.open('https://www.linkedin.com/in/enzo-vandepoele-3224ab2b2/')" class="lien"> <img class="reseaux" src="Image/linkedin.png" title="Logo_Linkedin"> </a> </td>
-			</tr>
-
-			<tr>
-				<td> <a onclick="window.open('https://github.com/Unicron03')" class="lien"> <img class="reseaux" src="Image/logo_github.png" title="Logo_Github"> </a> </td>
-			</tr>
-		</table>	
+				</div>
+			</div>
+		
+			<div class="text-content">
+				<h1 class="textTab" align="left"> 
+					<div id="helloText">Bonjour,</div><br>
+					Je suis Vandepoele Enzo.<br>
+					Je suis un étudiant en BUT Informatique<br>
+					de 1ère année qui aime,<br>
+					<u>programmer</u>, <span class="dev">&lsaquo;développer&rsaquo;</span><br>
+					et créer des <span class="wrap" data-period="2000"
+						data-rotate='[ "jeux", "applications", "logiciels" ]'></span>!
+				</h1>
+			</div>
+		</div>
 		
 		<div class="hero">
-				
 			<a class="scroll-link" href=".info">
 				<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
-				<g fill="none" fill-rule="evenodd">
-					<rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
-					<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
-				</g>
-			</svg>
+					<g fill="none" fill-rule="evenodd">
+						<rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+						<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+					</g>
+				</svg>
 			</a>
-		</div>
+		</div>		
 
 		<div class="info">
 			<h2>About me</h2>
@@ -103,5 +82,24 @@
 			<br>
 			<p> Pour toutes questions, vous pouvez me contacter via mes réseaux ou par mail juste <a href="#" onclick="window.location.href = 'Page/Contact.html';" class="lien"> ICI</a>.</p>
 		</div>
+		
+		<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+			
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		<script id="rendered-js" >
+			jQuery(document).ready(function ($) {
+
+			$('a.scroll-link').click(function (e) {
+				e.preventDefault();
+				$id = $(this).attr('href');
+				$('body,html').animate({
+				scrollTop: $($id).offset().top - 20 },
+				750);
+			});
+
+			});
+		</script>
+		<script src="JS/animation.js"></script>
 	</body>
 </html>
