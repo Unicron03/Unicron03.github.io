@@ -1,12 +1,12 @@
 
 body {
 	margin: 0;
-	font-size: 1.1em;
 	background: url('../Image/background.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	font: 700 30px 'Space Mono', monospace;
+	font-family: 'Space Mono', monospace;
+	font-size: x-large;
 }
 
 h2 {
@@ -75,7 +75,7 @@ span.animation {
 	/* font-family: 'firamonobold', cursive; */
 	position: relative;
 	color: #fff;
-	font-size: 2rem;
+	font-size: larger;
 	padding-left: 150px;
 }
 #helloText{font-size: 3rem;}
@@ -87,7 +87,7 @@ span.animation {
 .lien:hover {text-decoration: underline;}
 
 .info {
-	font-size: 1.6rem;
+	/* font-size: 1.6rem; */
 	margin: 0% 3% 3% 3%;
 	color: white;
 	font-family: 'firamonobold', cursive;
@@ -95,7 +95,7 @@ span.animation {
 
 .cardBox {
 	float: left;
-	font-size: 1.2em;
+	/* font-size: 1.2em; */
 	margin: 0 0 0 0.5%;
 	perspective: 800px;
 	transition: all 0.4s ease 0s;
@@ -119,7 +119,7 @@ span.animation {
 	box-sizing: border-box;
 	color: white;
 	display: block;
-	font-size: 1.2em;
+	/* font-size: 1.2em; */
 	height: 100%;
 	padding: 0.8em 0.7em;
 	position: absolute;
@@ -131,7 +131,7 @@ span.animation {
 	background: #fff;
 	border-radius: 100%;
 	color: #222;
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
 	line-height: 30px;
 	padding: 0 7px 4px 6px;
 }
@@ -144,7 +144,7 @@ span.animation {
 	color: #fff;
 	text-decoration: none;
 	border-radius: 1px;
-	font-size: 0.9em;
+	/* font-size: 0.9em; */
 	transition: all 0.2s ease 0s;
 }
 .card .back a:hover {
@@ -224,6 +224,9 @@ span.animation {
 }
 
 @media screen and (max-width: 850px) {
+	body, .textTab {font-size: larger;}
+	#helloText {font-size: 2.5rem;}
+
     .containerTab {
         flex-direction: column;
         align-items: center;
