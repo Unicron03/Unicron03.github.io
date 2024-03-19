@@ -9,10 +9,19 @@ body {
 	font-size: x-large;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 h2 {
 	color: #22A39F;
 	font-family: 'Space Mono', monospace;
 	text-align: center;
+}
+h3 {
+	text-align: center;
+	border: solid;
 }
 
 span {
@@ -89,7 +98,7 @@ span.animation {
 	/* font-size: 1.6rem; */
 	margin: 5% 3% 3% 3%;
 	color: white;
-	font-family: 'firamonobold', cursive;
+	font-family: 'firamonobold', cursive, sans-serif;
 }
 
 .cardBox {
@@ -100,10 +109,7 @@ span.animation {
 	transition: all 0.4s ease 0s;
 	width: 100%;
 }
-.cardBox:hover .card, /* Cet élément n'a pas besoin de changement */
-.hovered .card { /* Ajoutez cette règle pour déclencher l'animation lorsque la carte a la classe "hovered" */
-    transform: rotateY(180deg);
-}
+.cardBox:hover .card {transform: rotateY(180deg);}
 .card {
 	background: url('../Image/Photo_Pro_S.png');
 	background-size: 100% 100%;
@@ -171,14 +177,6 @@ span.animation {
 	-webkit-animation: giro 1.5s 1;
 	animation: giro 1.5s 1;
 }
-.cardBox:nth-child(3) .card {
-	-webkit-animation: giro 2s 1;
-	animation: giro 2s 1;
-}
-.cardBox:nth-child(4) .card {
-	-webkit-animation: giro 2.5s 1;
-	animation: giro 2.5s 1;
-}
 @-webkit-keyframes giro {
 	from {transform: rotateY(180deg);}
 	to {transform: rotateY(0deg);}
@@ -225,6 +223,28 @@ span.animation {
     flex: 2;
     padding-left: 20px;
 }
+
+.skills-icons {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills-icons-self {
+	height: 70px;
+	width: auto;
+	margin: 15px;
+} .skills-icons-self:hover {scale: 1.25; transition: 0.15s;}
+#see-more {
+	border: 4px solid darkcyan;
+	background-color: cadetblue;
+    width: fit-content;
+    margin-top: 25px !important;
+    margin: auto;
+    padding: 7px;
+    border-radius: 12px;
+	cursor: pointer;
+} #see-more:hover {background-color: darkcyan; transition: 0.15s;}
 
 @media screen and (max-width: 850px) {
 	body, .textTab {font-size: larger;}
