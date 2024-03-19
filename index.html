@@ -40,7 +40,7 @@
 			<div class="profile-picture">
 				<div class="boxesContainer">
 					<div class="cardBox">
-						<div class="card">
+						<div class="card clickable">
 							<div class="back"> 
 							</div>
 						</div>
@@ -100,6 +100,17 @@
 
 			});
 		</script>
+
+		<script>
+			jQuery(document).ready(function ($) {
+				// Lorsque vous cliquez sur une carte avec la classe "clickable"
+				$('.clickable').click(function () {
+					// Ajoutez la classe "hovered" à la carte pour déclencher l'animation
+					$(this).toggleClass('hovered');
+				});
+			});
+		</script>
+
 		<script src="JS/animation.js"></script>
 	</body>
 </html>

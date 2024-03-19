@@ -71,7 +71,7 @@ span.animation {
 .lien {cursor: pointer;}
 
 .textTab {
-	font-family: 'firamonobold', cursive !important;
+	/* font-family: 'firamonobold', cursive; */
 	position: relative;
 	color: #fff;
 	font-size: larger;
@@ -100,7 +100,10 @@ span.animation {
 	transition: all 0.4s ease 0s;
 	width: 100%;
 }
-.cardBox:hover .card {transform: rotateY(180deg);}
+.cardBox:hover .card, /* Cet élément n'a pas besoin de changement */
+.hovered .card { /* Ajoutez cette règle pour déclencher l'animation lorsque la carte a la classe "hovered" */
+    transform: rotateY(180deg);
+}
 .card {
 	background: url('../Image/Photo_Pro_S.png');
 	background-size: 100% 100%;
