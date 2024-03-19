@@ -46,8 +46,7 @@ span.animation {
 }
 
 .mouse {
-	max-width: 8%;
-	min-width: 70px;
+	width: 70px;
 	height: auto;
 }
 
@@ -72,7 +71,7 @@ span.animation {
 .lien {cursor: pointer;}
 
 .textTab {
-	/* font-family: 'firamonobold', cursive; */
+	font-family: 'firamonobold', cursive !important;
 	position: relative;
 	color: #fff;
 	font-size: larger;
@@ -88,7 +87,7 @@ span.animation {
 
 .info {
 	/* font-size: 1.6rem; */
-	margin: 0% 3% 3% 3%;
+	margin: 5% 3% 3% 3%;
 	color: white;
 	font-family: 'firamonobold', cursive;
 }
@@ -109,7 +108,7 @@ span.animation {
 	height: 300px;
 	transform-style: preserve-3d;
 	transition: transform 0.5s ease 0s;
-	width: 100%;
+	width: 300px;
 	border-radius: 10%;
 }
 .card p {margin-bottom: 1.8em;}
@@ -192,7 +191,7 @@ span.animation {
     justify-content: space-between;
     align-items: center;
     padding: 35px;
-	margin: 4% 0% 0% 5%;
+	margin: 4% 0% 5% 5%;
 }
 
 .social-icons {
@@ -232,7 +231,7 @@ span.animation {
         flex-direction: column;
         align-items: center;
 		padding: 0;
-		margin: 4% 0% 5% 5%;
+		margin: 0% 5% 5%;
     }
 
     .social-icons {
@@ -249,4 +248,7 @@ span.animation {
     }
 
 	.textTab, .text-content {padding-left: 0;}
+
+	.cardBox {text-align: -webkit-center;}
+	.card {width: 200px; height: 200px;}
 }
