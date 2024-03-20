@@ -98,7 +98,7 @@ span.animation {
 	/* font-size: 1.6rem; */
 	margin: 5% 3% 3% 3%;
 	color: white;
-	font-family: 'firamonobold', 'Space-mono', cursive;
+	font-family: 'firamonobold', 'Space-mono', 'Gill Sans MT', "sans-serif";
 }
 
 .cardBox {
@@ -251,8 +251,10 @@ span.animation {
 }
 .see-more-contact #see-more {margin-right: auto;}
 .see-more-contact h1 {
-	margin: 0 auto;
-	padding-right: 140px;
+	position: absolute;
+    margin: 31px 22px 0 0;
+	width: -webkit-fill-available;
+	height: 0;
 }
 
 .bandeau {
@@ -263,7 +265,7 @@ span.animation {
 .formation {
 	padding-bottom: 25px;
 	color: white;
-    font-family: 'firamonobold', 'Space-mono', cursive;
+    font-family: 'firamonobold', 'Space-mono', 'Gill Sans MT', cursive;
 	margin: 0px 25px 0px 25px;;
 	text-align: center;
 }
@@ -304,4 +306,5 @@ span.animation {
 
 	.cardBox {text-align: -webkit-center;}
 	.card {width: 200px; height: 200px;}
+	.skills-icons-self {height: 55px;}
 }
