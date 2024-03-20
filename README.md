@@ -1,7 +1,7 @@
 # Portfolio
 Portolio is my own professionnal website that contain 
   - some of big projects
-  - my languages skills
+  - my language and platform skills
   - my CV and motivation letter
   - some of informations about me
   - my contact

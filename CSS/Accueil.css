@@ -246,6 +246,17 @@ span.animation {
 	cursor: pointer;
 } #see-more:hover {background-color: darkcyan; transition: 0.15s;}
 
+.bandeau {
+	border-top: 10px double gray;
+	background-color: cadetblue;
+	height: 200px;
+	padding: 10px 10px 10px 10px;
+	font-family: "Poppins", sans-serif;
+}
+.formation {
+
+}
+
 @media screen and (max-width: 850px) {
 	body, .textTab {font-size: larger;}
 	#helloText {font-size: 2.5rem;}
