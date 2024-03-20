@@ -191,8 +191,7 @@ span.animation {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 35px;
-	margin: 4% 0% 5% 5%;
+	margin: 4% 4% 5% 5%;
 }
 
 .social-icons {
@@ -246,15 +245,35 @@ span.animation {
 	cursor: pointer;
 } #see-more:hover {background-color: darkcyan; transition: 0.15s;}
 
+.see-more-contact {
+    display: flex;
+    align-items: baseline;
+}
+.see-more-contact #see-more {margin-right: auto;}
+.see-more-contact h1 {
+	margin: 0 auto;
+	padding-right: 140px;
+}
+
 .bandeau {
-	border-top: 10px double gray;
+	border-top: 2px solid #fff;
 	background-color: cadetblue;
-	height: 200px;
-	padding: 10px 10px 10px 10px;
 	font-family: "Poppins", sans-serif;
 }
 .formation {
-
+	padding-bottom: 25px;
+	color: white;
+    font-family: 'firamonobold', cursive, sans-serif;
+	margin: 0px 25px 0px 25px;;
+	text-align: center;
+}
+.formation h1 {
+	text-align: center;
+	color: white;
+	font: 700 30px 'Space Mono', monospace;
+}
+.formation li {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 850px) {
