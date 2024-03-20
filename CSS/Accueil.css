@@ -5,7 +5,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	font-family: 'Space Mono', monospace;
+	font-family: 'Space Mono', cursive, monospace;
 	font-size: x-large;
 }
 
@@ -16,7 +16,7 @@ a {
 
 h2 {
 	color: #22A39F;
-	font-family: 'Space Mono', monospace;
+	font-family: 'Space Mono', cursive, monospace;
 	text-align: center;
 }
 h3 {
@@ -25,7 +25,7 @@ h3 {
 }
 
 span {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Inconsolata', cursive, monospace;
 	padding: 3px;
 }
 span.dev {
@@ -98,18 +98,21 @@ span.animation {
 	/* font-size: 1.6rem; */
 	margin: 5% 3% 3% 3%;
 	color: white;
-	font-family: 'firamonobold', 'Space-mono', 'Gill Sans MT', "sans-serif";
+	font-family: 'firamonobold', 'Space-mono', cursive, monospace, "sans-serif";
 }
 
 .cardBox {
 	float: left;
-	/* font-size: 1.2em; */
 	margin: 0 0 0 0.5%;
 	perspective: 800px;
 	transition: all 0.4s ease 0s;
 	width: 100%;
 }
-.cardBox:hover .card {transform: rotateY(180deg);}
+/* .cardBox:hover .card {transform: rotateY(180deg);} */
+.flipped {
+    transform: rotateY(180deg);
+}
+
 .card {
 	background: url('../Image/Photo_Pro_S.png');
 	background-size: 100% 100%;
@@ -120,14 +123,12 @@ span.animation {
 	width: 300px;
 	border-radius: 10%;
 }
-.card p {margin-bottom: 1.8em;}
 .card .front,
 .card .back {
 	backface-visibility: hidden;
 	box-sizing: border-box;
 	color: white;
 	display: block;
-	/* font-size: 1.2em; */
 	height: 100%;
 	padding: 0.8em 0.7em;
 	position: absolute;
@@ -135,55 +136,12 @@ span.animation {
 	width: 100%;
 	border-radius: 10%;
 }
-.card .front strong {
-	background: #fff;
-	border-radius: 100%;
-	color: #222;
-	/* font-size: 1.5em; */
-	line-height: 30px;
-	padding: 0 7px 4px 6px;
-}
 .card .back {
 	transform: rotateY( 180deg);
-}
-.card .back a {
-	padding: 0.3em 0.5em;
-	background: #333;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 1px;
-	/* font-size: 0.9em; */
-	transition: all 0.2s ease 0s;
-}
-.card .back a:hover {
-	background: #fff;
-	color: #333;
-	text-shadow: 0 0 1px #333;
 }
 .cardBox:nth-child(1) .card .back {
 	background: url('../Image/EV.jpg');
 	background-size: 100% 100%;
-}
-.cardBox:nth-child(2) .card .back {
-	background: #1c87c9;
-}
-.cardBox:nth-child(3) .card .back {
-	background: #ff6347;
-}
-.cardBox:nth-child(4) .card .back {
-	background: #8ebf42;
-}
-.cardBox:nth-child(2) .card {
-	-webkit-animation: giro 1.5s 1;
-	animation: giro 1.5s 1;
-}
-@-webkit-keyframes giro {
-	from {transform: rotateY(180deg);}
-	to {transform: rotateY(0deg);}
-}
-@keyframes giro {
-	from {transform: rotateY(180deg);}
-	to {transform: rotateY(0deg);}
 }
 
 .containerTab {
@@ -250,11 +208,12 @@ span.animation {
     align-items: baseline;
 }
 .see-more-contact #see-more {margin-right: auto;}
-.see-more-contact h1 {
+.see-more-contact h3 {
 	position: absolute;
     margin: 31px 22px 0 0;
 	width: -webkit-fill-available;
 	height: 0;
+	border: none;
 }
 
 .bandeau {
@@ -265,14 +224,14 @@ span.animation {
 .formation {
 	padding-bottom: 25px;
 	color: white;
-    font-family: 'firamonobold', 'Space-mono', 'Gill Sans MT', cursive;
+    font-family: 'firamonobold', 'Space-mono', cursive, monospace, cursive;
 	margin: 0px 25px 0px 25px;;
 	text-align: center;
 }
-.formation h1 {
+.formation h3 {
 	text-align: center;
 	color: white;
-	font: 700 30px 'Space Mono', monospace;
+	font: 700 30px 'Space Mono', cursive, monospace;
 }
 .formation li {
 	text-decoration: none;

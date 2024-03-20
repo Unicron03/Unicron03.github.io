@@ -43,7 +43,7 @@
 				<div class="boxesContainer">
 					<div class="cardBox">
 						<div class="card">
-							<div class="back"> 
+							<div class="back id"> 
 							</div>
 						</div>
 					</div>
@@ -111,7 +111,7 @@
 		<div class="bandeau">
 			<div class="formation">
 				<div class="see-more-contact">
-					<h1>Contact</h1>
+					<h3>Contact</h3>
 					<a href="#" onclick="window.location.href = 'Page/Contact.html';"> <p id="see-more">Voir plus</p> </a>
 				</div>				
 				<div class="skills-icons">
@@ -144,6 +144,41 @@
 				750);
 			});
 
+			});
+		</script>
+		<script>
+			jQuery(document).ready(function ($) {
+				// Fonction pour activer/désactiver le :hover en fonction de la largeur de la fenêtre
+				function toggleHover() {
+					if (window.innerWidth <= 850) {
+						$('.cardBox .card').off('mouseenter mouseleave');
+						rotateCard();
+					} else {
+						$('.cardBox .card').on({
+							mouseenter: function () {
+								$(this).addClass('flipped');
+							},
+							mouseleave: function () {
+								$(this).removeClass('flipped');
+							}
+						});
+					}
+				}
+
+				// Exécutez la fonction au chargement de la page
+				toggleHover();
+
+				// Ajoutez un écouteur d'événements de redimensionnement de fenêtre pour activer/désactiver le :hover
+				$(window).resize(function () {
+					toggleHover();
+				});
+
+				// Fonction pour faire tourner automatiquement la carte toutes les 10 secondes
+				function rotateCard() {
+					setInterval(function () {
+						$('.cardBox .card').toggleClass('flipped');
+					}, 3000);
+				}
 			});
 		</script>
 		<script src="JS/animation.js"></script>
