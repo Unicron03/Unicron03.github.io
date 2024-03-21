@@ -309,3 +309,11 @@ html, body {
     transform: translateX(-2px);
   }
 }
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+}
