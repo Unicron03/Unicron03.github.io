@@ -1,14 +1,4 @@
 
-body {
-	margin: 0;
-	background: url('../Image/background.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
-	font-family: 'Space Mono', 'Poppins', monospace;
-	font-size: x-large;
-}
-
 a {
 	color: white;
 	text-decoration: none;

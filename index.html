@@ -8,7 +8,8 @@
 		<title> Vandepoele Enzo </title>
 		<link href="CSS/Accueil.css" rel="stylesheet">
 		<link href="CSS/menu.css" rel="stylesheet">
-		<link rel="icon" type="image/x-icon" href="Image/EV.jpg" />
+		<link href="CSS/ToggleSwitch.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="Image/EV.jpg"/>
 	</head>
 	
 	<body>
@@ -27,6 +28,29 @@
 						</li>
 					</ul>
 				</nav>
+
+				<div class="wrapper">
+					<input type="checkbox" id="hide-checkbox">
+					<label for="hide-checkbox" class="toggle">
+						<span class="toggle-button">
+							<span class="crater crater-1"></span>
+							<span class="crater crater-2"></span>
+							<span class="crater crater-3"></span>   
+							<span class="crater crater-4"></span>
+							<span class="crater crater-5"></span>
+							<span class="crater crater-6"></span>
+							<span class="crater crater-7"></span>
+						</span>
+						<span class="star star-1"></span>
+						<span class="star star-2"></span>
+						<span class="star star-3"></span>
+						<span class="star star-4"></span>
+						<span class="star star-5"></span>
+						<span class="star star-6"></span>
+						<span class="star star-7"></span>
+						<span class="star star-8"></span>
+					</label>
+				</div>
 			</header>
 		</div>
 
@@ -146,6 +170,20 @@
 
 			});
 		</script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const checkbox = document.getElementById('hide-checkbox');
+				checkbox.addEventListener('change', function() {
+					if (this.checked) {
+						document.body.style.backgroundImage = "url('Image/backgroundWhite.jpg')";
+					} else {
+						document.body.style.backgroundImage = "url('Image/background.jpg')";
+					}
+				});
+			});
+		</script>
+
 		<script src="JS/animation.js"></script>
 	</body>
 </html>
