@@ -253,3 +253,7 @@ span.animation {
 	.card {width: 200px; height: 200px;}
 	.skills-icons-self {height: 55px;}
 }
+
+@media screen and (max-width: 475px) {
+	.formation h3 {text-align: right;}
+}
