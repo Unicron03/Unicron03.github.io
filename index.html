@@ -146,41 +146,6 @@
 
 			});
 		</script>
-		<script>
-			jQuery(document).ready(function ($) {
-				// Fonction pour activer/désactiver le :hover en fonction de la largeur de la fenêtre
-				function toggleHover() {
-					if (window.innerWidth <= 850) {
-						$('.cardBox .card').off('mouseenter mouseleave');
-						rotateCard();
-					} else {
-						$('.cardBox .card').on({
-							mouseenter: function () {
-								$(this).addClass('flipped');
-							},
-							mouseleave: function () {
-								$(this).removeClass('flipped');
-							}
-						});
-					}
-				}
-
-				// Exécutez la fonction au chargement de la page
-				toggleHover();
-
-				// Ajoutez un écouteur d'événements de redimensionnement de fenêtre pour activer/désactiver le :hover
-				$(window).resize(function () {
-					toggleHover();
-				});
-
-				// Fonction pour faire tourner automatiquement la carte toutes les 10 secondes
-				function rotateCard() {
-					setInterval(function () {
-						$('.cardBox .card').toggleClass('flipped');
-					}, 3000);
-				}
-			});
-		</script>
 		<script src="JS/animation.js"></script>
 	</body>
 </html>

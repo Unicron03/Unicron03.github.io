@@ -108,11 +108,7 @@ span.animation {
 	transition: all 0.4s ease 0s;
 	width: 100%;
 }
-/* .cardBox:hover .card {transform: rotateY(180deg);} */
-.flipped {
-    transform: rotateY(180deg);
-}
-
+.cardBox:hover .card {transform: rotateY(180deg);}
 .card {
 	background: url('../Image/Photo_Pro_S.png');
 	background-size: 100% 100%;
