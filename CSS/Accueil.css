@@ -5,7 +5,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	font-family: 'Space Mono', cursive, monospace;
+	font-family: 'Space Mono', 'Poppins', monospace;
 	font-size: x-large;
 }
 
@@ -16,7 +16,7 @@ a {
 
 h2 {
 	color: #22A39F;
-	font-family: 'Space Mono', cursive, monospace;
+	font-family: 'Space Mono', monospace;
 	text-align: center;
 }
 h3 {
@@ -25,7 +25,7 @@ h3 {
 }
 
 span {
-	font-family: 'Inconsolata', cursive, monospace;
+	font-family: 'Inconsolata', monospace;
 	padding: 3px;
 }
 span.dev {
@@ -98,7 +98,7 @@ span.animation {
 	/* font-size: 1.6rem; */
 	margin: 5% 3% 3% 3%;
 	color: white;
-	font-family: 'firamonobold', 'Space-mono', cursive, monospace, "sans-serif";
+	font-family: 'firamonobold', 'Space-mono', monospace, "sans-serif";
 }
 
 .cardBox {
@@ -220,14 +220,14 @@ span.animation {
 .formation {
 	padding-bottom: 25px;
 	color: white;
-    font-family: 'firamonobold', 'Space-mono', cursive, monospace, cursive;
+    font-family: 'firamonobold', 'Space-mono', monospace, cursive;
 	margin: 0px 25px 0px 25px;;
 	text-align: center;
 }
 .formation h3 {
 	text-align: center;
 	color: white;
-	font: 700 30px 'Space Mono', cursive, monospace;
+	font: 700 30px 'Space Mono', monospace;
 }
 .formation li {
 	text-decoration: none;
