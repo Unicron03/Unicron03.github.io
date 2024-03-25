@@ -13,11 +13,11 @@ h3 {
 	text-align: center;
 	border: solid;
 }
-
+/* 
 span {
 	font-family: 'Inconsolata', monospace;
 	padding: 3px;
-}
+} */
 span.dev {
 	background-color: #000;
 	color: #fff;

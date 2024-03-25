@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<head>
 		<title> Unicron03 </title>
 		<link href="../CSS/Skills.css" rel="stylesheet">
 		<link href="../CSS/menu.css" rel="stylesheet">
+		<link href="../CSS/ToggleSwitch.css" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="../Image/EV.jpg" />
 	</head>
 	
@@ -26,91 +31,64 @@
 			</header>
 		</div>
 
+		<div class="wrapper">
+			<input type="checkbox" id="hide-checkbox">
+			<label for="hide-checkbox" class="toggle">
+				<span class="toggle-button">
+					<span class="crater crater-1"></span>
+					<span class="crater crater-2"></span>
+					<span class="crater crater-3"></span>   
+					<span class="crater crater-4"></span>
+					<span class="crater crater-5"></span>
+					<span class="crater crater-6"></span>
+					<span class="crater crater-7"></span>
+				</span>
+				<span class="star star-1"></span>
+				<span class="star star-2"></span>
+				<span class="star star-3"></span>
+				<span class="star star-4"></span>
+				<span class="star star-5"></span>
+				<span class="star star-6"></span>
+				<span class="star star-7"></span>
+				<span class="star star-8"></span>
+			</label>
+		</div>
+
+		<h1><u>My Skills</u></h1>
+
 		<center>
-		<div id="SkillBox">
-			<center><p class="Menu"><u>My Skills</u></p></center>
-				
-			<svg style="display: none;">
-			  <defs>
-				  <symbol id="arrow" viewBox="0 0 100 100">
-					<path d="M12.5 45.83h64.58v8.33H12.5z"/>
-						<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
-				  </symbol>
-			  </defs>
-			</svg>					
-				
-		<img src="https://2.bp.blogspot.com/--aPlnH6X1YA/UEf7yeJ3gGI/AAAAAAAATgw/TgMK9IVzipk/s1600/Skills%2B-%2BPawan%2BMall.png" alt="Skill" />
-		<div class="SkillBar">
-			<div id="Skill-HTML"> 
-			  <span class="Skill-Area ">HTML</span>
-			  <span class="PercentText ">90%</span>
-			</div>
-		</div>
-		  
-		<div class="SkillBar">
-			<div id="Skill-CSS">
-			  <span class="Skill-Area ">CSS</span>
-			  <span class="PercentText ">85%</span>
-			</div>
-		</div>
-		  		  
-		<div class="SkillBar">
-			<div id="Skill-JS">
-			  <span class="Skill-Area ">JavaScript</span>
-			  <span class="PercentText ">80%</span>
+		<div class="SkillBox">
+			<h2>Development Skills</h2>
+			<div class="skills-icons" id="development">
+				<img class="skills-icons-self" src="../Image/logo_html5.png" alt="Logo HTML5">
+				<img class="skills-icons-self" src="../Image/logo_css3.png" alt="Logo CSS3">
+				<img class="skills-icons-self" src="../Image/logo_js.png" alt="Logo JS">
+				<img class="skills-icons-self" src="../Image/logo_python.png" alt="Logo Python">
+				<img class="skills-icons-self" src="../Image/logo_sql.png" alt="Logo SQL">
+				<img class="skills-icons-self" src="../Image/logo_c.png" alt="Logo C">
+				<img class="skills-icons-self" src="../Image/logo_cpp.png" alt="Logo CPP">
+				<img class="skills-icons-self" src="../Image/logo_cs.png" alt="Logo CS">
+				<img class="skills-icons-self" src="../Image/logo_lua.png" alt="Logo Lua">
+				<img class="skills-icons-self" src="../Image/logo_bash.png" alt="Logo Bash">
+				<img class="skills-icons-self" src="../Image/logo_batch.png" alt="Logo Batch">
 			</div>
 		</div>
 
-		<div class="SkillBar">
-			<div id="Skill-Python">
-			  <span class="Skill-Area ">Python</span>
-			  <span class="PercentText ">95%</span>
-			</div>
-		</div>
-		  
-		<div class="SkillBar">
-			<div id="Skill-Lua">
-			  <span class="Skill-Area ">Lua</span>
-			  <span class="PercentText ">100%</span>
-			</div>
-		</div>
-
-		<div class="SkillBar">
-			<div id="Skill-CPP">
-			  <span class="Skill-Area ">C++ </span>
-			  <span class="PercentText ">90%</span>
+		<div class="SkillBox" id="platform">
+			<h2>Platform Skills</h2>
+			<div class="skills-icons">
+				<img class="skills-icons-self" src="../Image/logo_git.png" alt="Logo Git">
+				<img class="skills-icons-self" src="../Image/logo_ubuntu.png" alt="Logo Ubuntu">
+				<img class="skills-icons-self" src="../Image/logo_github.png" alt="Logo GitHub">
+				<img class="skills-icons-self" src="../Image/logo_mysql.png" alt="Logo MySQL">
+				<img class="skills-icons-self" src="../Image/logo_vs.png" alt="Logo VS">
+				<img class="skills-icons-self" src="../Image/logo_vsc.png" alt="Logo VSC">
+				<img class="skills-icons-self" src="../Image/logo_love.png" alt="Logo Love">
+				<img class="skills-icons-self" src="../Image/logo_tiled.png" alt="Logo Tiled">
+				<img class="skills-icons-self" src="../Image/logo_office.png" alt="Logo Office">
 			</div>
 		</div>
 
-		<div class="SkillBar">
-			<div id="Skill-CS">
-			  <span class="Skill-Area ">C# </span>
-			  <span class="PercentText ">80%</span>
-			</div>
-		</div>
-
-		<div class="SkillBar">
-			<div id="Skill-SQL">
-			  <span class="Skill-Area ">SQL </span>
-			  <span class="PercentText ">85%</span>
-			</div>
-		</div>
-
-		<div class="SkillBar">
-			<div id="Skill-Bash">
-			  <span class="Skill-Area ">Bash </span>
-			  <span class="PercentText ">75%</span>
-			</div>
-		</div>
-
-		<div class="SkillBar">
-			<div id="Skill-Batch">
-			  <span class="Skill-Area ">Batch </span>
-			  <span class="PercentText ">35%</span>
-			</div>
-		</div>
-		  
-		</div>
-		</center>
+		<script src='../JS/toggleSwitchAnim.js'></script>
 	</body>
 </html>
