@@ -178,12 +178,21 @@ span.animation {
 	width: auto;
 	margin: 15px;
 } .skills-icons-self:hover {scale: 1.25; transition: 0.15s;}
+#see-more-skills {
+	border: 4px solid darkcyan;
+	background-color: cadetblue;
+    width: fit-content;
+	margin-left: 15px;
+    padding: 7px;
+    border-radius: 12px;
+	cursor: pointer;
+} #see-more-skills:hover {background-color: darkcyan; transition: 0.15s;}
 #see-more {
 	border: 4px solid darkcyan;
 	background-color: cadetblue;
     width: fit-content;
     margin-top: 25px !important;
-    margin: auto;
+	margin: auto;
     padding: 7px;
     border-radius: 12px;
 	cursor: pointer;
