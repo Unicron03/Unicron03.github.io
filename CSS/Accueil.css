@@ -89,6 +89,7 @@ span.animation {
 	margin: 5% 3% 3% 3%;
 	color: white;
 	font-family: 'firamonobold', 'Space-mono', monospace, "sans-serif";
+	/* text-indent: 15px; */
 }
 
 .cardBox {
@@ -230,6 +231,10 @@ span.animation {
 }
 .formation li {
 	text-decoration: none;
+}
+
+.bio-facts {
+	list-style-type: decimal;
 }
 
 @media screen and (max-width: 850px) {

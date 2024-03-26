@@ -123,6 +123,7 @@
 					<a href="" onclick="window.location.href = 'Page/Skills.html';"> <p id="see-more-skills">Voir plus</p> </a>
 				</div>
 			</div>
+			<p>Pour voir mes compétences en action, consultez <a class="lien" href="Page/Projet.html">mes projets</a> ou <a class="lien" href="Page/Contact.html">contactez-moi</a> et parlez-moi de votre idée de projet !</p>
 
 			<br>
 			<h3>Some Project</h3>
@@ -130,10 +131,17 @@
 
 			<br>
 			<h3>Randoms facts</h3>
-			<center><i>TO DO</i></center>
-
-			<br>
-			<p> J'ai aussi réalisé plusieurs projets étudiant mais aussi personnels. Vous pouvez trouver quelques-uns de ces projets juste <a href="#" onclick="window.location.href = 'Page/Projet.html';" class="lien"> ICI</a>. </p>
+			<ul class="bio-facts">
+				<li>
+					<i>A FAIRE</i>
+				</li>
+				<li>
+					Activités préférées : la guitare électrique &#127928;, le sport &#127955;, les jeux vidéo 🎮 et "manger du code" <img style="height: 30px; width: auto; vertical-align: middle;" src="Image/emoji_graphic.jpeg"></img> !
+				</li>
+				<li>
+					Oh et j'aime les chats <span id="catDrop">&#128568;</span> !
+				</li>
+			</ul>
 		</div>
 
 		<div class="bandeau">
@@ -175,19 +183,7 @@
 			});
 		</script>
 
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const checkbox = document.getElementById('hide-checkbox');
-				checkbox.addEventListener('change', function() {
-					if (this.checked) {
-						document.body.style.backgroundImage = "url('Image/backgroundWhite.jpg')";
-					} else {
-						document.body.style.backgroundImage = "url('Image/background.jpg')";
-					}
-				});
-			});
-		</script>
-
 		<script src="JS/animation.js"></script>
+		<script src="JS/catDrop.js"></script>
 	</body>
 </html>
