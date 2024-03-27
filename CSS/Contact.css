@@ -8,6 +8,11 @@ section {
   display: ruby-text;
 }
 
+h2 {
+  font-family: 'Lobster Two', monospace !important;
+  font-size: xx-large;
+}
+
 .rt-container {
   max-width: 1110px;
   width: 95%;
@@ -107,7 +112,7 @@ section {
 }
 
 .button {
-  font-family: 'Lobster Two', cursive;
+  /* font-family: 'Lobster Two', cursive; */
   font-size: 1.3rem;
   margin-left: 2%;
   position: relative;
