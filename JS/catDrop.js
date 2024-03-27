@@ -1,8 +1,22 @@
-document.getElementById("catDrop").addEventListener("click", function(){
-    let intervalId = setInterval(createImage, 50);
-    setTimeout(() => {
-        clearInterval(intervalId);
-    }, 5000);
+
+let audio = new Audio('Sounds/NyanCat.ogg');
+
+document.getElementById("catDrop").addEventListener("click", function() {
+    if(audio.paused) {
+        alert('ACTIVER LE SON !!! \u{1F63A}');
+        audio.play();
+        setTimeout(() => {
+            let intervalId = setInterval(createImage, 10);
+            setTimeout(() => {
+                clearInterval(intervalId);
+            }, 10000);
+        }, 4000);
+    
+        setTimeout(() => {
+            audio.pause();
+            audio.currentTime = 0;
+        }, 19000);
+    }
 
     function createImage() {
         let img = document.createElement('img');
@@ -15,7 +29,7 @@ document.getElementById("catDrop").addEventListener("click", function(){
         img.style.transform = 'scale(2)'
         document.body.appendChild(img);
         setTimeout(() => {
-        document.body.removeChild(img);
+            document.body.removeChild(img);
         }, 5000);
     }
 });
