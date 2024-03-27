@@ -60,9 +60,9 @@
 
 		<div class="containerTab">
 			<div class="social-icons">
-				<a href="https://www.instagram.com/unicron_e" class="social-link"><img class="social-icon" src="Image/logo_instagram.png" alt="Logo Instagram"></a>
-				<a href="https://www.linkedin.com/in/enzo-vandepoele-3224ab2b2/" class="social-link"><img class="social-icon" src="Image/linkedin.png" alt="Logo Linkedin"></a>
-				<a href="https://github.com/Unicron03" class="social-link"><img class="social-icon" src="Image/logo_github.png" alt="Logo Github"></a>
+				<a href="https://www.instagram.com/unicron_e" target="_blank" class="social-link"><img class="social-icon" src="Image/logo_instagram.png" alt="Logo Instagram"></a>
+				<a href="https://www.linkedin.com/in/enzo-vandepoele-3224ab2b2/" target="_blank" class="social-link"><img class="social-icon" src="Image/linkedin.png" alt="Logo Linkedin"></a>
+				<a href="https://github.com/Unicron03" target="_blank" class="social-link"><img class="social-icon" src="Image/logo_github.png" alt="Logo Github"></a>
 			</div>
 		
 			<div class="profile-picture">
@@ -105,7 +105,7 @@
 
 			<h3>Professional background</h3>
 			<p> Actuellement en 1ère année de BUT Informatique, je cherche à devenir développeur de jeux vidéo ou d'applications/logiciels. </p>
-			<a href="Image/VANDEPOELE_Enzo.pdf" download target="_blank"> <p id="see-more">Télécharger mon CV</p> </a>
+			<a href="Image/Enzo Vandepoele.pdf" download target="_blank"> <p id="see-more">Télécharger mon CV</p> </a>
 			<br>
 			<div class="infoSkills">
 				<h3>Some Skills</h3>
@@ -120,7 +120,7 @@
 					<img class="skills-icons-self" src="Image/logo_github.png" alt="Logo GitHub">
 					<img class="skills-icons-self" src="Image/logo_vs.png" alt="Logo VS">
 					<img class="skills-icons-self" src="Image/logo_dnet.png" alt="Logo .Net">
-					<a href="" onclick="window.location.href = 'Page/Skills.html';"> <p id="see-more-skills">Voir plus</p> </a>
+					<a href="Page/Skills.html"> <p id="see-more-skills">Voir plus</p> </a>
 				</div>
 			</div>
 			<p>Pour voir mes compétences en action, consultez <a class="lien" href="Page/Projet.html">mes projets</a> ou <a class="lien" href="Page/Contact.html">contactez-moi</a> et parlez-moi de votre idée de projet !</p>
@@ -139,7 +139,7 @@
 					Activités préférées : la guitare électrique &#127928;, le sport &#127955;, les jeux vidéo 🎮 et "manger du code" <img style="height: 30px; width: auto; vertical-align: middle;" src="Image/emoji_graphic.jpeg"></img> !
 				</li>
 				<li>
-					Oh et j'aime les chats <span id="catDrop">&#128568;</span> !
+					Oh et j'aime les chats <span id="catDrop" style="cursor: pointer;">&#128568;</span> !
 				</li>
 			</ul>
 		</div>
@@ -180,6 +180,19 @@
 				750);
 			});
 
+			});
+		</script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const checkbox = document.getElementById('hide-checkbox');
+				checkbox.addEventListener('change', function() {
+					if (this.checked) {
+						document.body.style.backgroundImage = "url('Image/backgroundWhite.jpg')";
+					} else {
+						document.body.style.backgroundImage = "url('Image/background.jpg')";
+					}
+				});
 			});
 		</script>
 
